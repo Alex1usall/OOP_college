@@ -1,0 +1,328 @@
+class Cinema {
+    private String name;
+    private String address;
+    private String website;
+
+
+    public Cinema(String name, String address, String website) {
+        this.name = name;
+        this.address = address;
+        this.website = website;
+    }
+
+
+    public void provideAddressInfo() {
+        System.out.println("Початок методу provideAddressInfo");
+        System.out.println("Кінець методу provideAddressInfo");
+    }
+
+
+    public void hostSession() {
+        System.out.println("Початок методу hostSession");
+        System.out.println("Кінець методу hostSession");
+    }
+
+
+    @Override
+    public String toString() {
+        return "Cinema{name='" + name + "', address='" + address + "', website='" + website + "'}";
+    }
+}
+
+
+class Movie {
+    private String title;
+    private int ageRestriction;
+    private int durationMinutes;
+    private String genre;
+
+
+    public Movie(String title, int ageRestriction, int durationMinutes, String genre) {
+        this.title = title;
+        this.ageRestriction = ageRestriction;
+        this.durationMinutes = durationMinutes;
+        this.genre = genre;
+    }
+
+
+    public void provideImpressions() {
+        System.out.println("Початок методу provideImpressions");
+        System.out.println("Кінець методу provideImpressions");
+    }
+
+
+    public void applyAgeRules() {
+        System.out.println("Початок методу applyAgeRules");
+        System.out.println("Кінець методу applyAgeRules");
+    }
+
+
+    @Override
+    public String toString() {
+        return "Movie{title='" + title + "', ageRestriction=" + ageRestriction + ", durationMinutes=" + durationMinutes + ", genre='" + genre + "'}";
+    }
+}
+
+
+class CinemaHall {
+    private int hallNumber;
+    private String technology;
+    private int totalSeats;
+
+
+    public CinemaHall(int hallNumber, String technology, int totalSeats) {
+        this.hallNumber = hallNumber;
+        this.technology = technology;
+        this.totalSeats = totalSeats;
+    }
+
+
+    public void provideSeats() {
+        System.out.println("Початок методу provideSeats");
+        System.out.println("Кінець методу provideSeats");
+    }
+
+
+    public void displayMovieTechnology() {
+        System.out.println("Початок методу displayMovieTechnology");
+        System.out.println("Кінець методу displayMovieTechnology");
+    }
+
+
+    @Override
+    public String toString() {
+        return "CinemaHall{hallNumber=" + hallNumber + ", technology='" + technology + "', totalSeats=" + totalSeats + "}";
+    }
+}
+
+
+class Session {
+    private String showDate;
+    private String showTime;
+    private String format;
+    private String technology;
+    private double price;
+
+
+    public Session(String showDate, String showTime, String format, String technology, double price) {
+        this.showDate = showDate;
+        this.showTime = showTime;
+        this.format = format;
+        this.technology = technology;
+        this.price = price;
+    }
+
+
+    public void bindMovieToTime() {
+        System.out.println("Початок методу bindMovieToTime");
+        System.out.println("Кінець методу bindMovieToTime");
+    }
+
+
+    @Override
+    public String toString() {
+        return "Session{showDate='" + showDate + "', showTime='" + showTime + "', format='" + format + "', technology='" + technology + "', price=" + price + "}";
+    }
+}
+
+
+class Seat {
+    private int rowNumber;
+    private int seatNumber;
+    private String category;
+
+
+    public Seat(int rowNumber, int seatNumber, String category) {
+        this.rowNumber = rowNumber;
+        this.seatNumber = seatNumber;
+        this.category = category;
+    }
+
+
+    public void accommodateViewer() {
+        System.out.println("Початок методу accommodateViewer");
+        System.out.println("Кінець методу accommodateViewer");
+    }
+
+
+    @Override
+    public String toString() {
+        return "Seat{rowNumber=" + rowNumber + ", seatNumber=" + seatNumber + ", category='" + category + "'}";
+    }
+}
+
+
+class Order {
+    private String orderNumber;
+    private String transactionDateTime;
+    private double amount;
+    private String paymentStatus;
+
+
+    public Order(String orderNumber, String transactionDateTime, double amount, String paymentStatus) {
+        this.orderNumber = orderNumber;
+        this.transactionDateTime = transactionDateTime;
+        this.amount = amount;
+        this.paymentStatus = paymentStatus;
+    }
+
+
+    public void confirmPaymentFact() {
+        System.out.println("Початок методу confirmPaymentFact");
+        System.out.println("Кінець методу confirmPaymentFact");
+    }
+
+
+    @Override
+    public String toString() {
+        return "Order{orderNumber='" + orderNumber + "', transactionDateTime='" + transactionDateTime + "', amount=" + amount + ", paymentStatus='" + paymentStatus + "'}";
+    }
+}
+
+
+class Ticket {
+    private String ticketNumber;
+    private String qrCode;
+    private double price;
+    private String status;
+
+
+    public Ticket(String ticketNumber, String qrCode, double price, String status) {
+        this.ticketNumber = ticketNumber;
+        this.qrCode = qrCode;
+        this.price = price;
+        this.status = status;
+    }
+
+
+    public void confirmSeatPayment() {
+        System.out.println("Початок методу confirmSeatPayment");
+        System.out.println("Кінець методу confirmSeatPayment");
+    }
+
+
+    public void provideBarcodeForScan() {
+        System.out.println("Початок методу provideBarcodeForScan");
+        System.out.println("Кінець методу provideBarcodeForScan");
+    }
+
+
+    @Override
+    public String toString() {
+        return "Ticket{ticketNumber='" + ticketNumber + "', qrCode='" + qrCode + "', price=" + price + ", status='" + status + "'}";
+    }
+}
+
+
+class Viewer {
+    private String fullName;
+    private String birthDate;
+    private String phoneNumber;
+    private String email;
+
+
+    public Viewer(String fullName, String birthDate, String phoneNumber, String email) {
+        this.fullName = fullName;
+        this.birthDate = birthDate;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+
+
+    public void selectSeats() {
+        System.out.println("Початок методу selectSeats");
+        System.out.println("Кінець методу selectSeats");
+    }
+
+
+    public void payForOrder() {
+        System.out.println("Початок методу payForOrder");
+        System.out.println("Кінець методу payForOrder");
+    }
+
+
+    @Override
+    public String toString() {
+        return "Viewer{fullName='" + fullName + "', birthDate='" + birthDate + "', phoneNumber='" + phoneNumber + "', email='" + email + "'}";
+    }
+}
+
+
+class Controller {
+    private String employeeId;
+    private String fullName;
+
+
+    public Controller(String employeeId, String fullName) {
+        this.employeeId = employeeId;
+        this.fullName = fullName;
+    }
+
+
+    public void scanQrCode() {
+        System.out.println("Початок методу scanQrCode");
+        System.out.println("Кінець методу scanQrCode");
+    }
+
+
+    public void checkDocuments() {
+        System.out.println("Початок методу checkDocuments");
+        System.out.println("Кінець методу checkDocuments");
+    }
+
+
+    public void redeemTicket() {
+        System.out.println("Початок методу redeemTicket");
+        System.out.println("Кінець методу redeemTicket");
+    }
+
+
+    @Override
+    public String toString() {
+        return "Controller{employeeId='" + employeeId + "', fullName='" + fullName + "'}";
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Cinema cinema = new Cinema("Multiplex", "вул. Хрещатик, 1", "www.multiplex.ua");
+        Movie movie = new Movie("Матриця", 16, 136, "Фантастика");
+        CinemaHall hall = new CinemaHall(1, "IMAX", 150);
+        Session session = new Session("2026-10-05", "19:00", "3D", "IMAX", 250.00);
+        Seat seat = new Seat(10, 15, "VIP");
+        Order order = new Order("ORD-10023", "2026-10-04 15:30", 250.00, "Оплачено");
+        Ticket ticket = new Ticket("T-998877", "QR-234SD", 250.00, "Активний");
+        Viewer viewer = new Viewer("Іванов Іван Іванович", "1995-05-20", "+380501234567", "ivanov@email.com");
+        Controller controller = new Controller("C-001", "Петренко Петро Петрович");
+
+        System.out.println("=== Виведення об'єктів через toString() ===");
+        System.out.println(cinema.toString());
+        System.out.println(movie.toString());
+        System.out.println(hall.toString());
+        System.out.println(session.toString());
+        System.out.println(seat.toString());
+        System.out.println(order.toString());
+        System.out.println(ticket.toString());
+        System.out.println(viewer.toString());
+        System.out.println(controller.toString());
+
+        System.out.println("\n=== Демонстрація виконання методів ===");
+        cinema.provideAddressInfo();
+        cinema.hostSession();
+        movie.provideImpressions();
+        movie.applyAgeRules();
+        hall.provideSeats();
+        hall.displayMovieTechnology();
+        session.bindMovieToTime();
+        seat.accommodateViewer();
+        order.confirmPaymentFact();
+        ticket.confirmSeatPayment();
+        ticket.provideBarcodeForScan();
+        viewer.selectSeats();
+        viewer.payForOrder();
+        controller.scanQrCode();
+        controller.checkDocuments();
+        controller.redeemTicket();
+    }
+}
